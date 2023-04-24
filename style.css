@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #48156d;
+    --winning-blocks: #2d414b;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+body {
+    color: var(--purple);
+    font-family: 'Helvetica';
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.startup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#yes{
+    margin-left: 10px;
+}
+#no{
+    margin-left: 80px;
+}
+#selectedChoice{
+    margin-left: 30px;
+}
+.container {
+    padding: 40px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#signal{
+    color: green;
+    margin-left: 10px;
+}
+.instructions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.instructions:nth-child(3)
+{
+    margin-bottom: 10px;
+}
+#result{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(230, 161, 44);
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple);
+    font-size: 100px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3) {
+    border-right: none;
+}
+.box:nth-child(6) {
+    border-right: none;
+}
+.box:nth-child(9) {
+    border-right: none;
+}
+.box:nth-child(7) {
+    border-bottom: none;
+}
+.box:nth-child(8) {
+    border-bottom: none;
+}
+.box:nth-child(9) {
+    border-bottom: none;
+}
+#error{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(230, 161, 44);
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: #ffffff;
+    border-color: var(--purple);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+    margin-top: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
